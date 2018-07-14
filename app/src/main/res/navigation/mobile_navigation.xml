@@ -29,6 +29,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_launcher_home_to_cart"
+            app:destination="@id/shopping_cart" />
 
         <!-- TODO ENDSTEP -->
     </fragment>
@@ -88,4 +91,12 @@
 
         <!-- TODO END STEP 12 -->
     </fragment>
+
+    <fragment
+        android:id="@+id/shopping_cart"
+        android:name="com.example.android.codelabs.navigation.CartFragment"
+        tools:layout="@layout/fragment_shopping">
+
+    </fragment>
+
 </navigation>

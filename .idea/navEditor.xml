@@ -20,6 +20,17 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="cart">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="y" value="-372" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="flow_step_one">
                     <value>
                       <LayoutPositions>
@@ -70,6 +81,20 @@
                             <option name="x" value="-179" />
                             <option name="y" value="-18" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_launcher_home_to_cart">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="next_action">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
