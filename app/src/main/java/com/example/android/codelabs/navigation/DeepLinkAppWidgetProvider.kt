@@ -21,7 +21,7 @@ import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.os.Bundle
 import android.widget.RemoteViews
-
+import androidx.navigation.NavDeepLinkBuilder
 
 
 /**
@@ -48,6 +48,15 @@ class DeepLinkAppWidgetProvider : AppWidgetProvider() {
 //            .createPendingIntent()
 //
 //        remoteViews.setOnClickPendingIntent(R.id.deep_link, pendingIntent)
+
+        val pendingIntent = NavDeepLinkBuilder(context)
+                .setGraph(R.navigation.mobile_navigation)
+                .setDestination(R.id.android)
+                .setArguments(args)
+                .createPendingIntent()
+
+        remoteViews.setOnClickPendingIntent(R.id.deep_link, pendingIntent)
+
         // TODO ENDSTEP 11
         appWidgetManager.updateAppWidget(appWidgetIds, remoteViews)
     }
